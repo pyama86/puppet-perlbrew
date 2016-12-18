@@ -66,7 +66,7 @@ define perlbrew::exec (
     default => $cwd,
   }
 
-  if versioncmp($::puppetversion, '3.0.0') >= 0 {
+  if versioncmp($::puppetversion, '3.4.0') >= 0 {
     exec { "${target}_${command}":
       command     => $command,
       creates     => $creates,
